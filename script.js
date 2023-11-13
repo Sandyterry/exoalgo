@@ -82,7 +82,7 @@
 // taper un nombre
 // si nombre > nombrePlusGrand
 // Alors nombrePlusGrand = nombre
-// i = position
+// i = position +1 (si i=0) i=position (si i=1)
 // fin si
 // Fin de For
 // Affichez nombrePlusGrand$
@@ -90,7 +90,7 @@
 
 // let nombrePlusGrand = 0
 // let nombre 
-// for (let i = 0; i < 5; i++) {
+// for (let i = 0; i < 20; i++) {
 //     nombre = prompt("Entrer un nombre")
 //     if (nombre > nombrePlusGrand){
 //         nombrePlusGrand = nombre
@@ -110,15 +110,17 @@
 // Alors nombrePlusGrand = nombre
 // fin si
 // taper un nombre
+// fin de tantque
+
 // Affichez nombrePlusGrand
 
 // let nombrePlusGrand = 0
-// let nombre = prompt("Entrer un nombre")
+// let nombre = prompt("Entrer un premier nombre")
 // while (nombre!= 0) {
-//     if (nombre > nombrePlusGrand){
+    //     if (nombre > nombrePlusGrand){
 //          nombrePlusGrand = nombre
 //             }   
-//     nombre = prompt("Entrer un nombre")
+//     // nombre = prompt("Entrer un nombre")
 // }
 // console.log(nombrePlusGrand)
 
@@ -128,28 +130,38 @@
 // Ecrire un algorithme qui demande un nombre de départ, et qui ensuite écrit la table de multiplication de ce nombre
 
 // variable nombre prompt taper un nombre
-// pour defini la variable I (multiplicateur) 
-// la variable resultat = nombre * I (multiplicateur)
-// afficher dans la console le nombre * le mutliplicateur = et le resultat
+// si nombre est strictement un nombre
+//          boucle for i=1 / i<=10 / i++    pour definir la variable I (multiplicateur)
+//                  la variable resultat = nombre * I (multiplicateur)
+//          afficher dans la console le nombre * le mutliplicateur = et le resultat
+//  fin de for
+// fin de si
+// Sinon afficher "la saisie n'es pas corrext"
+
 
 // let nombre = prompt ("entrer un nombre")
-// for (let I = 0 ; I <= 10; I++ ){
-//     let resultat = nombre * I ;
-//     console.log(nombre+ "*" + I + "=" + resultat);    
+// if(!isNaN(nomber))
+//      for (let I = 1 ; I <= 10; I++ ){
+//           let resultat = nombre * I ;
+//           console.log(nombre+ "*" + I + "=" + resultat);    
 // }
-
+// else { console.log ("la saisie n'est pas correct")
+// }
 
 // Exercice 7 :
 // Ecrire un algorithme qui demande un nombre de départ, et qui calcule la somme des entiers jusqu’à ce nombre
 
 // variable nombre 
-// variable de la somme
-// boucle pour for i / i < nombre / i++
-// afficher dans la console le nombre et la somme 
+// variable de la somme=0
+//          boucle pour for i =1/ i <= nombre / i++
+//          somme = somme + 1
+//              fin de boucle for
+//              afficher somme 
 
-// let nombre = prompt ("entrer un nombre")
+// let nombre =parseInt(prompt ("entrer un nombre"));
 // let somme = 0
+
 // for (let i = 1; i <= nombre; i++) {
-//     somme += i ; 
+//     somme = somme + i ; 
 // }
 // console.log("La somme des entiers jusqu'à " + nombre + " est : " + somme);
